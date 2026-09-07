@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+
+    <p>
+        <b>Page 1: Login</b> | 
+        <a href="form2.html">Go to Page 2 (General Registration)</a> | 
+        <a href="form3.html">Go to Page 3 (Student Registration)</a>
+    </p>
+    <hr>
+
+    <form>
+        <table cellpadding="4">
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" size="25"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" size="25"></td>
+            </tr>
+            <tr>
+                <td>City of<br>Employment:</td>
+                <td><input type="text" size="25"></td>
+            </tr>
+            <tr>
+                <td>Web server:</td>
+                <td>
+                    <select>
+                        <option>— Choose a server —</option>
+                        <option>Apache</option>
+                        <option>Nginx</option>
+                        <option>IIS</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Please specify<br>your role:</td>
+                <td>
+                    <input type="radio" name="role" id="admin"><label for="admin">Admin</label><br>
+                    <input type="radio" name="role" id="engineer"><label for="engineer">Engineer</label><br>
+                    <input type="radio" name="role" id="manager"><label for="manager">Manager</label><br>
+                    <input type="radio" name="role" id="guest"><label for="guest">Guest</label>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Single Sign-on<br>to the following:</td>
+                <td>
+                    <input type="checkbox" id="mail"><label for="mail">Mail</label><br>
+                    <input type="checkbox" id="payroll"><label for="payroll">Payroll</label><br>
+                    <input type="checkbox" id="selfservice"><label for="selfservice">Self-service</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
